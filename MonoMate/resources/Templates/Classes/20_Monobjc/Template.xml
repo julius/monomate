@@ -1,0 +1,3 @@
+<Template identifier="Monobjc Subclass (Single)" superclass="NSObject" superclasschoosable="true" supportsnib="false" icon="Icon.png">
+	<CSFile path="Class.cs" />
+</Template>

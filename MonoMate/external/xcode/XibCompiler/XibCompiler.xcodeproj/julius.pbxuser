@@ -1,0 +1,85 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = C6819C9F0E02E7B5009301BB /* XibCompiler */;
+		activeTarget = 8DD76F960486AA7600D96B5E /* XibCompiler */;
+		codeSenseManager = C6819CA90E02E7D3009301BB /* Code sense */;
+		executables = (
+			C6819C9F0E02E7B5009301BB /* XibCompiler */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 235071413;
+			PBXWorkspaceStateSaveDate = 235071413;
+		};
+		perUserProjectItems = {
+			C6819CB40E02E8C1009301BB /* PBXBookmark */ = C6819CB40E02E8C1009301BB /* PBXBookmark */;
+			C6819CD20E02F589009301BB /* PBXTextBookmark */ = C6819CD20E02F589009301BB /* PBXTextBookmark */;
+		};
+		sourceControlManager = C6819CA80E02E7D3009301BB /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	08FB7796FE84155DC02AAC07 /* XibCompiler.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1223, 528}}";
+			sepNavSelRange = "{1065, 0}";
+			sepNavVisRange = "{0, 1091}";
+			sepNavWindowFrame = "{{38, 174}, {820, 578}}";
+		};
+	};
+	8DD76F960486AA7600D96B5E /* XibCompiler */ = {
+		activeExec = 0;
+		executables = (
+			C6819C9F0E02E7B5009301BB /* XibCompiler */,
+		);
+	};
+	C6819C9F0E02E7B5009301BB /* XibCompiler */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = XibCompiler;
+		sourceDirectories = (
+		);
+	};
+	C6819CA80E02E7D3009301BB /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	C6819CA90E02E7D3009301BB /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C6819CB40E02E8C1009301BB /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* XibCompiler.m */;
+	};
+	C6819CD20E02F589009301BB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* XibCompiler.m */;
+		name = "XibCompiler.m: 26";
+		rLen = 0;
+		rLoc = 1065;
+		rType = 0;
+		vrLen = 1091;
+		vrLoc = 0;
+	};
+}
