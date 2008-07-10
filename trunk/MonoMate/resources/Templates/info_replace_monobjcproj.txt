@@ -1,0 +1,7 @@
+build.sh
+essentials/Info.plist
+essentials/nomono/NoMonoMessage.html
+source/Program.cs
+source/Controller.cs
+source/Controller.objc.cs
+resources/MainMenu.xib

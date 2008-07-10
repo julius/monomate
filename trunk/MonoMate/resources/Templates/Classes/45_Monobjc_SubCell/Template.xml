@@ -1,0 +1,3 @@
+<Template identifier="NSCell Subclass" superclass="NSCell" superclasschoosable="true" supportsnib="false" icon="Icon.png">
+	<CSFile path="Class.cs" />
+</Template>

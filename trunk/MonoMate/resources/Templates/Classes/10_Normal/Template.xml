@@ -1,0 +1,3 @@
+<Template identifier="Normal Class" superclass="object" superclasschoosable="true" supportsnib="false" icon="Icon.png">
+	<CSFile path="Class.cs" />
+</Template>

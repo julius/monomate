@@ -1,0 +1,4 @@
+<Template identifier="NSWindowController with Nib" superclass="NSWindowController" superclasschoosable="false" supportsnib="true" icon="Icon.png">
+	<CSFile path="Class.cs" />
+	<CSFile path="Class.objc.cs" />
+</Template>

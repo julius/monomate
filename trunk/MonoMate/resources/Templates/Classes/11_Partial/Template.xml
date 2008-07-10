@@ -1,0 +1,3 @@
+<Template identifier="Partial Class" superclass="object" superclasschoosable="false" supportsnib="false" icon="Icon.png">
+	<CSFile path="Class.part.cs" />
+</Template>

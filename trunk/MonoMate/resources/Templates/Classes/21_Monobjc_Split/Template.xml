@@ -1,0 +1,4 @@
+<Template identifier="Monobjc Subclass (Splitted)" superclass="NSObject" superclasschoosable="true" supportsnib="false" icon="Icon.png">
+	<CSFile path="Class.cs" />
+	<CSFile path="Class.objc.cs" />
+</Template>

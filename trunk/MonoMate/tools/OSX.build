@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+
+<project name="OSX-Build" basedir="./../">
+	
+	<property name="lib.dir" value="tools/lib" />
+	<property name="dist.dir" value="build" />
+	<property name="build.dir" value="${dist.dir}/obj" />
+	<property name="build.mono.dir" value="${dist.dir}/require-mono-version" />
+	<property name="build.nomono.dir" value="${dist.dir}/no-mono-version" />
+	
+	
+	<target name="build-mono" depends="compile">
+	    <!-- Create the application bundle -->
+	    <mkappl name="${proj.name}"
+	        icon="essentials/Icon.icns"
+	        infoplist="essentials/Info.plist"
+	        todir="${build.mono.dir}">
+	      <!-- Copy executable -->
+	      <copy-in-resources basedir="${build.dir}">
+	        <include name="${proj.name}.exe"/>
+	      </copy-in-resources>
+
+	      <!-- Copy libraries -->
+	      <copy-in-resources basedir="${lib.dir}">
+	        <include name="Monobjc*.dll"/>
+	      </copy-in-resources>
+
+	      <!-- Copy other files or folder -->
+	      <copy-in-resources basedir="resources">
+	        <include name="**"/>
+	      </copy-in-resources>
+	    </mkappl>
+	</target>
+	
+	<target name="build-nomono" depends="prepare">
+	    <!-- Create the application bundle -->
+	    <mkappl name="${proj.name}"
+	        icon="essentials/Icon.icns"
+	        infoplist="essentials/Info.plist"
+	        todir="${build.nomono.dir}">
+
+	      <!-- Copy executable -->
+	      <copy-in-resources basedir="${build.dir}">
+	        <include name="${proj.name}"/>
+	      </copy-in-resources>
+
+	      <!-- Copy other files or folder -->
+	      <copy-in-resources basedir="resources">
+	        <include name="**"/>
+	      </copy-in-resources>
+	    </mkappl>
+	</target>
+	
+	<target name="compile" depends="banner, prepare, dir-structure">
+		
+	    <!-- Compile source files -->
+	    <csc target="exe" output="${build.dir}/${proj.name}.exe">
+	      <sources>
+	        <include name="./source/**/*.cs"/>
+	      </sources>
+	      <references basedir="${lib.dir}">
+			<include name="Monobjc*.dll" />
+	      </references>
+	    </csc>
+
+	</target>
+	
+	<target name="prepare" depends="">
+		<loadtasks assembly="${lib.dir}/../NAnt.Monobjc.dll" />
+	</target>
+	
+	<target name="dir-structure">
+		<delete dir="${dist.dir}" failonerror="false" />
+		
+	    <mkdir dir="${dist.dir}" failonerror="false" />
+		<mkdir dir="${build.dir}" failonerror="false" />
+	</target>
+	
+  <!-- Displays a banner -->
+  <!-- +++++++++++++++++ -->
+  <target name="banner">
+    <echo message="########################################"/>
+    <echo message="${proj.name} Build System"/>
+    <echo message="########################################"/>
+  </target>
+
+</project>
